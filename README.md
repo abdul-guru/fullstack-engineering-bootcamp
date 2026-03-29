@@ -56,6 +56,14 @@ src/
 └── lab/               # Lab exercises and code comparisons
 ```
 
+## Getting Started
+
+```bash
+git clone https://github.com/abdul-guru/fullstack-engineering-bootcamp.git
+cd fullstack-engineering-bootcamp
+git checkout day1-foundation
+```
+
 ## The Project: TaskFlow
 
 A small work/task tracking system covering:

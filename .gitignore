@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Training material (raw/private)
+docs/git_ignore/
+
 # User-specific files
 *.rsuser
 *.suo

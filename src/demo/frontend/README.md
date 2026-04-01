@@ -1,16 +1,45 @@
-# React + Vite
+# TaskFlow UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React frontend for the TaskFlow task management app. Built with React 19 and Vite.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Node.js](https://nodejs.org/) (v18+)
+- The [backend API](../backend/README.md) running on `http://localhost:5026`
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+The app will start at `http://localhost:5173` by default.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Available Scripts
+
+| Script          | Description                |
+| --------------- | -------------------------- |
+| `npm run dev`   | Start the dev server (HMR) |
+| `npm run build` | Production build           |
+| `npm run lint`  | Run ESLint                 |
+| `npm run preview` | Preview production build |
+
+## Project Structure
+
+```
+src/
+├── api.js         # API client – calls the .NET backend REST API
+├── App.jsx        # Root component – loads tasks, handles create & delete
+├── App.css        # App styles
+├── TaskForm.jsx   # Form for creating a new task (title + description)
+├── TaskList.jsx   # Table that displays tasks with status and delete action
+├── main.jsx       # Entry point
+└── index.css      # Global styles
+```
+
+## Tech Stack
+
+- **React 19** – UI library
+- **Vite 8** – Dev server & bundler
+- **ESLint** – Linting

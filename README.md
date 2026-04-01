@@ -40,8 +40,7 @@ Each stage of the bootcamp lives on its own Git branch. Each branch contains fol
 
 | Branch | Focus |
 |---|---|
-| `day0-starter` | Starter solution and project scaffolding |
-| `day1-foundation` | Engineering mindset, flow, and setup |
+| `day1-foundation` | Engineering mindset, full-stack flow, project setup |
 | `day2-controllers` | Controllers, DTOs, services, validation |
 | `day3-minimalapi-mongodb` | Minimal APIs and MongoDB integration |
 | `day4-react-integration` | React frontend and API integration |
@@ -51,9 +50,18 @@ Each branch includes:
 
 ```
 src/
-├── demo/          # Trainer demo code
-├── lab/           # Participant lab exercises
-└── comparisons/   # Bad vs good code examples
+├── demo/
+│   ├── backend/       # ASP.NET Core Web API
+│   └── frontend/      # React (Vite) UI
+└── lab/               # Lab exercises and code comparisons
+```
+
+## Getting Started
+
+```bash
+git clone https://github.com/abdul-guru/fullstack-engineering-bootcamp.git
+cd fullstack-engineering-bootcamp
+git checkout day1-foundation
 ```
 
 ## The Project: TaskFlow

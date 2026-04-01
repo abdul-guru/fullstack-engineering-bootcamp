@@ -6,6 +6,9 @@
 # Training material (raw/private)
 docs/git_ignore/
 
+# PPTX manipulation scripts
+scripts/
+
 # User-specific files
 *.rsuser
 *.suo
